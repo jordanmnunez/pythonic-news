@@ -1,4 +1,2 @@
 language = "python3"
-onBoot = "python manage.py migrate"
-run = "python manage.py runserver 0.0.0.0:8000"
-
+run = "export PYTHONPATH=$PYTHONPATH:$(pwd)/externals && tar -xzf externals.tar.gz && python manage.py runserver 0.0.0.0:3000"

@@ -1,6 +1,6 @@
 language = "python3"
-onBoot = "export PYTHONPATH=$PYTHONPATH:$(pwd)/externals && tar -xzf externals.tar.gz"
-run = "python manage.py runserver 0.0.0.0:3000"
+onBoot = "tar -xzf externals.tar.gz"
+run = "PYTHONPATH=$PYTHONPATH:$(pwd)/externals python manage.py runserver 0.0.0.0:3000"
 
 [packager]
 ignoredPaths=["./"]

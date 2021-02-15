@@ -1,2 +1,3 @@
 language = "python3"
-run = "export PYTHONPATH=$PYTHONPATH:$(pwd)/externals && tar -xzf externals.tar.gz && python manage.py runserver 0.0.0.0:3000"
+onBoot = "export PYTHONPATH=$PYTHONPATH:$(pwd)/externals && tar -xzf externals.tar.gz"
+run = "python manage.py runserver 0.0.0.0:3000"
